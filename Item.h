@@ -11,21 +11,23 @@ private:
     string itemSeller;
     double itemPrice;
     int itemQuantity;
+    int itemID;
 public:
-    Item(string itemName, string itemDescription, string itemSeller, double itemPrice, int itemQuantity);
+    static int id;
+
     Item(string itemName, string itemDescription, double itemPrice, int itemQuantity);
 
     string getItemName() const;
     string getItemDescription() const;
-    string getItemSeller() const;
     double getItemPrice() const;
     int getItemQuantity() const;
 
     void setItemName(string name);
     void setItemDescription(string description);
-    void setItemSeller(string seller);
     void setItemPrice(double price);
     void setItemQuantity(int quantity);
+
+    void print();
 };
 
 #endif
