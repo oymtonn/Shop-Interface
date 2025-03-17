@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "clang++ build all files",
+            "command": "/bin/bash",
+            "args": [
+                "-c", 
+                "clang++ -g ${fileDirname}/*.cpp -o ${fileDirname}/main"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compiles all .cpp files in the directory and generates the executable"
+        },
+        {
+            "type": "shell",
+            "label": "Run Program",
+            "command": "${fileDirname}/main", // Run the generated executable
+            "group": "test",
+            "dependsOn": "clang++ build all files", // Ensure it builds before running
+            "problemMatcher": [],
+            "detail": "Runs the compiled executable"
+        }
+    ]
+}
