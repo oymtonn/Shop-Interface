@@ -11,9 +11,7 @@ private:
     string itemSeller;
     double itemPrice;
     int itemQuantity;
-    int itemID;
 public:
-    static int id;
 
     Item(string itemName, string itemDescription, double itemPrice, int itemQuantity);
 
