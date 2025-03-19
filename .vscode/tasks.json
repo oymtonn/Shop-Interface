@@ -2,28 +2,35 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Build StoreInventory",
             "type": "shell",
-            "label": "clang++ build all files",
-            "command": "/bin/bash",
+            "command": "/usr/bin/g++",
             "args": [
-                "-c", 
-                "clang++ -g ${fileDirname}/*.cpp -o ${fileDirname}/main"
+                "-std=c++14",
+                "main.cpp",
+                "Item.cpp",
+                "StoreInventory.cpp",
+                "User.cpp",
+                "-o",
+                "StoreInventory",
+                "-Wall",
+                "-Wextra",
+                "-g"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": ["$gcc"],
-            "detail": "Compiles all .cpp files in the directory and generates the executable"
+            "problemMatcher": ["$gcc"]
         },
         {
+            "label": "Run StoreInventory",
             "type": "shell",
-            "label": "Run Program",
-            "command": "${fileDirname}/main", // Run the generated executable
-            "group": "test",
-            "dependsOn": "clang++ build all files", // Ensure it builds before running
-            "problemMatcher": [],
-            "detail": "Runs the compiled executable"
+            "command": "./StoreInventory",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
         }
     ]
 }
