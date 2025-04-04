@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/myo/Desktop/Honors-Project-Shop-Interface/Item.cpp" "CMakeFiles/shop_interface.dir/Item.cpp.o" "gcc" "CMakeFiles/shop_interface.dir/Item.cpp.o.d"
-  "/Users/myo/Desktop/Honors-Project-Shop-Interface/StoreInventory.cpp" "CMakeFiles/shop_interface.dir/StoreInventory.cpp.o" "gcc" "CMakeFiles/shop_interface.dir/StoreInventory.cpp.o.d"
-  "/Users/myo/Desktop/Honors-Project-Shop-Interface/User.cpp" "CMakeFiles/shop_interface.dir/User.cpp.o" "gcc" "CMakeFiles/shop_interface.dir/User.cpp.o.d"
-  "/Users/myo/Desktop/Honors-Project-Shop-Interface/main.cpp" "CMakeFiles/shop_interface.dir/main.cpp.o" "gcc" "CMakeFiles/shop_interface.dir/main.cpp.o.d"
+  "/Users/myo/Desktop/Honors-Project-Shop-Interface/src/Item.cpp" "CMakeFiles/shop_interface.dir/src/Item.cpp.o" "gcc" "CMakeFiles/shop_interface.dir/src/Item.cpp.o.d"
+  "/Users/myo/Desktop/Honors-Project-Shop-Interface/src/StoreInventory.cpp" "CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o" "gcc" "CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o.d"
+  "/Users/myo/Desktop/Honors-Project-Shop-Interface/src/User.cpp" "CMakeFiles/shop_interface.dir/src/User.cpp.o" "gcc" "CMakeFiles/shop_interface.dir/src/User.cpp.o.d"
+  "/Users/myo/Desktop/Honors-Project-Shop-Interface/src/main.cpp" "CMakeFiles/shop_interface.dir/src/main.cpp.o" "gcc" "CMakeFiles/shop_interface.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

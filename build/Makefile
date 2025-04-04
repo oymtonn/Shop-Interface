@@ -129,101 +129,101 @@ shop_interface/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/build
 .PHONY : shop_interface/fast
 
-Item.o: Item.cpp.o
-.PHONY : Item.o
+src/Item.o: src/Item.cpp.o
+.PHONY : src/Item.o
 
 # target to build an object file
-Item.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/Item.cpp.o
-.PHONY : Item.cpp.o
+src/Item.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/Item.cpp.o
+.PHONY : src/Item.cpp.o
 
-Item.i: Item.cpp.i
-.PHONY : Item.i
+src/Item.i: src/Item.cpp.i
+.PHONY : src/Item.i
 
 # target to preprocess a source file
-Item.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/Item.cpp.i
-.PHONY : Item.cpp.i
+src/Item.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/Item.cpp.i
+.PHONY : src/Item.cpp.i
 
-Item.s: Item.cpp.s
-.PHONY : Item.s
+src/Item.s: src/Item.cpp.s
+.PHONY : src/Item.s
 
 # target to generate assembly for a file
-Item.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/Item.cpp.s
-.PHONY : Item.cpp.s
+src/Item.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/Item.cpp.s
+.PHONY : src/Item.cpp.s
 
-StoreInventory.o: StoreInventory.cpp.o
-.PHONY : StoreInventory.o
+src/StoreInventory.o: src/StoreInventory.cpp.o
+.PHONY : src/StoreInventory.o
 
 # target to build an object file
-StoreInventory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/StoreInventory.cpp.o
-.PHONY : StoreInventory.cpp.o
+src/StoreInventory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o
+.PHONY : src/StoreInventory.cpp.o
 
-StoreInventory.i: StoreInventory.cpp.i
-.PHONY : StoreInventory.i
+src/StoreInventory.i: src/StoreInventory.cpp.i
+.PHONY : src/StoreInventory.i
 
 # target to preprocess a source file
-StoreInventory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/StoreInventory.cpp.i
-.PHONY : StoreInventory.cpp.i
+src/StoreInventory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.i
+.PHONY : src/StoreInventory.cpp.i
 
-StoreInventory.s: StoreInventory.cpp.s
-.PHONY : StoreInventory.s
+src/StoreInventory.s: src/StoreInventory.cpp.s
+.PHONY : src/StoreInventory.s
 
 # target to generate assembly for a file
-StoreInventory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/StoreInventory.cpp.s
-.PHONY : StoreInventory.cpp.s
+src/StoreInventory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.s
+.PHONY : src/StoreInventory.cpp.s
 
-User.o: User.cpp.o
-.PHONY : User.o
+src/User.o: src/User.cpp.o
+.PHONY : src/User.o
 
 # target to build an object file
-User.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/User.cpp.o
-.PHONY : User.cpp.o
+src/User.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/User.cpp.o
+.PHONY : src/User.cpp.o
 
-User.i: User.cpp.i
-.PHONY : User.i
+src/User.i: src/User.cpp.i
+.PHONY : src/User.i
 
 # target to preprocess a source file
-User.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/User.cpp.i
-.PHONY : User.cpp.i
+src/User.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/User.cpp.i
+.PHONY : src/User.cpp.i
 
-User.s: User.cpp.s
-.PHONY : User.s
+src/User.s: src/User.cpp.s
+.PHONY : src/User.s
 
 # target to generate assembly for a file
-User.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/User.cpp.s
-.PHONY : User.cpp.s
+src/User.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/User.cpp.s
+.PHONY : src/User.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -234,18 +234,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... shop_interface"
-	@echo "... Item.o"
-	@echo "... Item.i"
-	@echo "... Item.s"
-	@echo "... StoreInventory.o"
-	@echo "... StoreInventory.i"
-	@echo "... StoreInventory.s"
-	@echo "... User.o"
-	@echo "... User.i"
-	@echo "... User.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/Item.o"
+	@echo "... src/Item.i"
+	@echo "... src/Item.s"
+	@echo "... src/StoreInventory.o"
+	@echo "... src/StoreInventory.i"
+	@echo "... src/StoreInventory.s"
+	@echo "... src/User.o"
+	@echo "... src/User.i"
+	@echo "... src/User.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
