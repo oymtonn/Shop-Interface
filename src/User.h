@@ -9,7 +9,6 @@ class User{
 private:
     bool admin;
     string password;
-    string test;
 public:
     User();
 

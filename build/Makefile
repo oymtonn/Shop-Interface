@@ -153,29 +153,29 @@ src/Item.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/Item.cpp.s
 .PHONY : src/Item.cpp.s
 
-src/StoreInventory.o: src/StoreInventory.cpp.o
-.PHONY : src/StoreInventory.o
+src/ShopInventory.o: src/ShopInventory.cpp.o
+.PHONY : src/ShopInventory.o
 
 # target to build an object file
-src/StoreInventory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o
-.PHONY : src/StoreInventory.cpp.o
+src/ShopInventory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.o
+.PHONY : src/ShopInventory.cpp.o
 
-src/StoreInventory.i: src/StoreInventory.cpp.i
-.PHONY : src/StoreInventory.i
+src/ShopInventory.i: src/ShopInventory.cpp.i
+.PHONY : src/ShopInventory.i
 
 # target to preprocess a source file
-src/StoreInventory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.i
-.PHONY : src/StoreInventory.cpp.i
+src/ShopInventory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.i
+.PHONY : src/ShopInventory.cpp.i
 
-src/StoreInventory.s: src/StoreInventory.cpp.s
-.PHONY : src/StoreInventory.s
+src/ShopInventory.s: src/ShopInventory.cpp.s
+.PHONY : src/ShopInventory.s
 
 # target to generate assembly for a file
-src/StoreInventory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.s
-.PHONY : src/StoreInventory.cpp.s
+src/ShopInventory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.s
+.PHONY : src/ShopInventory.cpp.s
 
 src/User.o: src/User.cpp.o
 .PHONY : src/User.o
@@ -237,9 +237,9 @@ help:
 	@echo "... src/Item.o"
 	@echo "... src/Item.i"
 	@echo "... src/Item.s"
-	@echo "... src/StoreInventory.o"
-	@echo "... src/StoreInventory.i"
-	@echo "... src/StoreInventory.s"
+	@echo "... src/ShopInventory.o"
+	@echo "... src/ShopInventory.i"
+	@echo "... src/ShopInventory.s"
 	@echo "... src/User.o"
 	@echo "... src/User.i"
 	@echo "... src/User.s"

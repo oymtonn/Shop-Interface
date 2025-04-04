@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/shop_interface.dir/src/Item.cpp.o"
   "CMakeFiles/shop_interface.dir/src/Item.cpp.o.d"
-  "CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o"
-  "CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o.d"
+  "CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.o"
+  "CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.o.d"
   "CMakeFiles/shop_interface.dir/src/User.cpp.o"
   "CMakeFiles/shop_interface.dir/src/User.cpp.o.d"
   "CMakeFiles/shop_interface.dir/src/main.cpp.o"

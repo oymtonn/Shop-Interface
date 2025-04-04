@@ -1,5 +1,6 @@
-CMakeFiles/shop_interface.dir/src/main.cpp.o: \
-  /Users/myo/Desktop/Honors-Project-Shop-Interface/src/main.cpp \
+CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.o: \
+  /Users/myo/Desktop/Honors-Project-Shop-Interface/src/ShopInventory.cpp \
+  /Users/myo/Desktop/Honors-Project-Shop-Interface/src/ShopInventory.h \
   /Users/myo/Desktop/Honors-Project-Shop-Interface/src/Item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert \
@@ -825,7 +826,6 @@ CMakeFiles/shop_interface.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdarg \
   /Users/myo/Desktop/Honors-Project-Shop-Interface/src/User.h \
-  /Users/myo/Desktop/Honors-Project-Shop-Interface/src/ShopInventory.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/unordered_map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/is_transparent.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__hash_table \

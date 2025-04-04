@@ -827,7 +827,7 @@ CMakeFiles/shop_interface.dir/src/Item.cpp.o: /Users/myo/Desktop/Honors-Project-
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
   /Users/myo/Desktop/Honors-Project-Shop-Interface/src/Item.h
 
-CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o: /Users/myo/Desktop/Honors-Project-Shop-Interface/src/StoreInventory.cpp \
+CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.o: /Users/myo/Desktop/Honors-Project-Shop-Interface/src/ShopInventory.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityInternalLegacy.h \
@@ -1658,7 +1658,7 @@ CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o: /Users/myo/Desktop/Honor
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
   /Users/myo/Desktop/Honors-Project-Shop-Interface/src/Item.h \
-  /Users/myo/Desktop/Honors-Project-Shop-Interface/src/StoreInventory.h \
+  /Users/myo/Desktop/Honors-Project-Shop-Interface/src/ShopInventory.h \
   /Users/myo/Desktop/Honors-Project-Shop-Interface/src/User.h
 
 CMakeFiles/shop_interface.dir/src/User.cpp.o: /Users/myo/Desktop/Honors-Project-Shop-Interface/src/User.cpp \
@@ -3318,7 +3318,7 @@ CMakeFiles/shop_interface.dir/src/main.cpp.o: /Users/myo/Desktop/Honors-Project-
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
   /Users/myo/Desktop/Honors-Project-Shop-Interface/src/Item.h \
-  /Users/myo/Desktop/Honors-Project-Shop-Interface/src/StoreInventory.h \
+  /Users/myo/Desktop/Honors-Project-Shop-Interface/src/ShopInventory.h \
   /Users/myo/Desktop/Honors-Project-Shop-Interface/src/User.h
 
 
@@ -3326,13 +3326,13 @@ CMakeFiles/shop_interface.dir/src/main.cpp.o: /Users/myo/Desktop/Honors-Project-
 
 /Users/myo/Desktop/Honors-Project-Shop-Interface/src/User.h:
 
-/Users/myo/Desktop/Honors-Project-Shop-Interface/src/StoreInventory.h:
+/Users/myo/Desktop/Honors-Project-Shop-Interface/src/ShopInventory.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__hash_table:
 
-/Users/myo/Desktop/Honors-Project-Shop-Interface/src/StoreInventory.cpp:
+/Users/myo/Desktop/Honors-Project-Shop-Interface/src/ShopInventory.cpp:
 
 /Users/myo/Desktop/Honors-Project-Shop-Interface/src/Item.h:
 

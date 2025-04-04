@@ -8,12 +8,12 @@
 #include <iostream>
 using namespace std;
 
-class StoreInventory{
+class ShopInventory{
 private:
     unordered_map<string, Item> inventory;
 public:
     void addItem(string itemName, string itemDescription, double itemPrice, int itemQuantity, User& user);
-    void searchItem(string itemName);
+    bool searchItem(string itemName);
     void purchaseItem(string itemName, User& user);
 
     void printInventory();

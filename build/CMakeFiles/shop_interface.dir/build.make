@@ -114,26 +114,26 @@ CMakeFiles/shop_interface.dir/src/Item.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shop_interface.dir/src/Item.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/myo/Desktop/Honors-Project-Shop-Interface/src/Item.cpp -o CMakeFiles/shop_interface.dir/src/Item.cpp.s
 
-CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o: CMakeFiles/shop_interface.dir/flags.make
-CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o: /Users/myo/Desktop/Honors-Project-Shop-Interface/src/StoreInventory.cpp
-CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o: CMakeFiles/shop_interface.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/myo/Desktop/Honors-Project-Shop-Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o -MF CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o.d -o CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o -c /Users/myo/Desktop/Honors-Project-Shop-Interface/src/StoreInventory.cpp
+CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.o: CMakeFiles/shop_interface.dir/flags.make
+CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.o: /Users/myo/Desktop/Honors-Project-Shop-Interface/src/ShopInventory.cpp
+CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.o: CMakeFiles/shop_interface.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/myo/Desktop/Honors-Project-Shop-Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.o -MF CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.o.d -o CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.o -c /Users/myo/Desktop/Honors-Project-Shop-Interface/src/ShopInventory.cpp
 
-CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/myo/Desktop/Honors-Project-Shop-Interface/src/StoreInventory.cpp > CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.i
+CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/myo/Desktop/Honors-Project-Shop-Interface/src/ShopInventory.cpp > CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.i
 
-CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/myo/Desktop/Honors-Project-Shop-Interface/src/StoreInventory.cpp -o CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.s
+CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/myo/Desktop/Honors-Project-Shop-Interface/src/ShopInventory.cpp -o CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.s
 
 # Object files for target shop_interface
 shop_interface_OBJECTS = \
 "CMakeFiles/shop_interface.dir/src/main.cpp.o" \
 "CMakeFiles/shop_interface.dir/src/User.cpp.o" \
 "CMakeFiles/shop_interface.dir/src/Item.cpp.o" \
-"CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o"
+"CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.o"
 
 # External object files for target shop_interface
 shop_interface_EXTERNAL_OBJECTS =
@@ -141,7 +141,7 @@ shop_interface_EXTERNAL_OBJECTS =
 shop_interface: CMakeFiles/shop_interface.dir/src/main.cpp.o
 shop_interface: CMakeFiles/shop_interface.dir/src/User.cpp.o
 shop_interface: CMakeFiles/shop_interface.dir/src/Item.cpp.o
-shop_interface: CMakeFiles/shop_interface.dir/src/StoreInventory.cpp.o
+shop_interface: CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.o
 shop_interface: CMakeFiles/shop_interface.dir/build.make
 shop_interface: CMakeFiles/shop_interface.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/myo/Desktop/Honors-Project-Shop-Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable shop_interface"

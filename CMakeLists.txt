@@ -8,7 +8,7 @@ add_executable(shop_interface
     src/main.cpp 
     src/User.cpp 
     src/Item.cpp 
-    src/StoreInventory.cpp
+    src/ShopInventory.cpp
 )
 
-target_include_directories(shop_interface PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src) 
+target_include_directories(shop_interface PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
