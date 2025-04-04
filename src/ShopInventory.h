@@ -13,7 +13,7 @@ private:
     unordered_map<string, Item> inventory;
 public:
     void addItem(string itemName, string itemDescription, double itemPrice, int itemQuantity, User& user);
-    bool searchItem(string itemName);
+    Item* searchItem(string itemName);
     void purchaseItem(string itemName, User& user);
 
     void printInventory();

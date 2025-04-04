@@ -58,36 +58,49 @@ int main(){
             }
         }
         else if (response == "n"){
-            User user2;
-            cout << "What item are you looking for?" << endl;
-            string itemName;
-            cin >> itemName;
-            ShopInventory inventory;
-            inventory.searchItem(itemName);
-
-            if (!inventory.searchItem(itemName)){
-                cout << "Item not found" << endl;
-            }
-            else{
-                cout << "Would you like to purchase this item? (y/n)" << endl;
-                string response;
-                cin >> response;
-                if (response == "y"){
-                    inventory.purchaseItem(itemName, user2);
-                }
-                else if (response == "n"){
-                    cout << "Thank you for your time!" << endl;
+            bool continueShopping = true;
+            while (continueShopping){
+                User user2;
+                cout << "What item are you looking for?" << endl;
+                string itemName;
+                cin >> itemName;
+                ShopInventory inventory;
+                
+                Item* foundItem = inventory.searchItem(itemName);
+                if (foundItem == nullptr){
+                    cout << "Item not found" << endl;
                 }
                 else{
-                    cout << "Invalid response" << endl;
+                    foundItem->print();
+                    cout << "Would you like to purchase this item? (y/n)" << endl;
+                    string response;
+                    cin >> response;
+                    if (response == "y"){
+                        inventory.purchaseItem(itemName, user2);
+                    }
+                    else if (response == "n"){
+                        cout << "Would you like to continue shopping? (y/n)" << endl;
+                        string response;
+                        cin >> response;
+                        if (response == "y"){
+                            continueShopping = true;
+                        }
+                        else if (response == "n"){
+                            continueShopping = false;
+                            cout << "Would you like to go back to the main menu? (y/n)" << endl;
+                            string response;
+                            cin >> response;
+                            restart = (response == "y") ? true : false;
+                        }
+                    }
+                    else{
+                        cout << "Invalid response" << endl;
+                    }
                 }
             }
-
-        }
-        else{
-            cout << "Invalid response" << endl;
         }
     }
+    return 0;
 }
 
 

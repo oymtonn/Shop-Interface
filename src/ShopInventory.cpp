@@ -10,17 +10,14 @@ void ShopInventory::addItem(string itemName, string itemDescription, double item
     }
 }
 
-bool ShopInventory::searchItem(string itemName){
-    bool found = false;
-
-    for (auto const& pair : inventory){
-        if (pair.first == itemName){
-            cout << "Item found:" << endl;
-            pair.second.print();
-            return true;
-        }
+Item* ShopInventory::searchItem(string itemName){
+    auto it = inventory.find(itemName);
+    if (it != inventory.end()){
+        cout << "Item found:" << endl;
+        it->second.print();
+        return &(it->second);
     }
-    return false;
+    return nullptr;
 }
 
 void ShopInventory::purchaseItem(string itemName, User& user){
