@@ -27,6 +27,24 @@ void StoreInventory::searchItem(string itemName){
 
 }
 
+void StoreInventory::purchaseItem(string itemName, User& user){
+    if (!user.isAdmin()){
+        Item purchasingItem = inventory[itemName];
+
+        if (purchasingItem.getItemQuantity() > 1){
+            cout << "Thank you for your purchase!";
+            purchasingItem.setItemQuantity(purchasingItem.getItemQuantity() - 1);
+        }
+        else{
+            cout << "Thank you for your purchase!";
+            inventory.erase(itemName);
+        }
+    }
+    else{
+        cout << "ERROR: You are an admin!";
+    }
+}
+
 void StoreInventory::printInventory(){
     for (auto const& pair : inventory){
         cout << pair.first << endl;
