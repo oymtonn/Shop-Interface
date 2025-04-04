@@ -13,5 +13,5 @@ int main(){
     StoreInventory inventory;
     inventory.addItem("Bottle", "Water bottle", 1.00, 3, user);
 
-    inventory.printInventory();
+    inventory.searchItem("Bottle5");
 }

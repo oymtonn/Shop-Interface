@@ -45,6 +45,6 @@ void Item::setItemQuantity(int itemQuantity){
 }
 
 void Item::print() const{
-    cout << itemName << "\n" << "Description: " << itemDescription << "\n"
-        << "Price: " << itemPrice << "\n" << "Quantity: " << itemQuantity;
+    cout << "   " <<itemName << "\n" << "   Description: " << itemDescription << "\n"
+        << "   Price: " << itemPrice << "\n" << "   Quantity: " << itemQuantity;
 }

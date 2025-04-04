@@ -10,9 +10,27 @@ void StoreInventory::addItem(string itemName, string itemDescription, double ite
     }
 }
 
+void StoreInventory::searchItem(string itemName){
+    bool found = false;
+
+    for (auto const& pair : inventory){
+        if (pair.first == itemName){
+            cout << "Item found:" << endl;
+            pair.second.print();
+            found = true;
+            break;
+        }
+    }
+    if (!found){
+        cout << "Item not found" << endl;
+    }
+
+}
+
 void StoreInventory::printInventory(){
     for (auto const& pair : inventory){
         cout << pair.first << endl;
         pair.second.print();
     }
 }
+
