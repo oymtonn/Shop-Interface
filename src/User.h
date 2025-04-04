@@ -8,7 +8,7 @@ using namespace std;
 class User{
 private:
     bool admin;
-    const string password;
+    string password;
     string test;
 public:
     User();

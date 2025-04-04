@@ -25,7 +25,7 @@ public:
     void setItemPrice(double price);
     void setItemQuantity(int quantity);
 
-    void print();
+    void print() const;
 };
 
 #endif
