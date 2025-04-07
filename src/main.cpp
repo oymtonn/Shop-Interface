@@ -83,7 +83,6 @@ int main(){
                     }
                 }
                 else{
-                    foundItem->print();
                     cout << "Would you like to purchase this item? (y/n)" << endl;
                     string response;
                     cin >> response;
