@@ -17,7 +17,9 @@ Item* ShopInventory::searchItem(string itemName){
         it->second.print();
         return &(it->second);
     }
-    return nullptr;
+    else{
+        return nullptr;
+    }
 }
 
 void ShopInventory::purchaseItem(string itemName, User& user){

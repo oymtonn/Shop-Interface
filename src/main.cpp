@@ -7,6 +7,7 @@ using namespace std;
 
 int main(){
     bool restart = true;
+    ShopInventory inventory;
 
     while (restart){
             cout << "Welcome to the shop!" << endl;
@@ -37,7 +38,6 @@ int main(){
                 int itemQuantity;
                 cin >> itemQuantity;
 
-                ShopInventory inventory;
                 inventory.addItem(itemName, itemDescription, itemPrice, itemQuantity, user1);
                 cout << "Item added to inventory. Here is the current inventory: " << endl;
                 inventory.printInventory();
@@ -64,11 +64,23 @@ int main(){
                 cout << "What item are you looking for?" << endl;
                 string itemName;
                 cin >> itemName;
-                ShopInventory inventory;
                 
                 Item* foundItem = inventory.searchItem(itemName);
                 if (foundItem == nullptr){
                     cout << "Item not found" << endl;
+                    cout << "Would you like to continue shopping? (y/n)" << endl;
+                    string response;
+                    cin >> response;
+                    if (response == "y"){
+                        continueShopping = true;
+                    }
+                    else if (response == "n"){
+                        continueShopping = false;
+                        cout << "Would you like to go back to the main menu? (y/n)" << endl;
+                        string response;
+                        cin >> response;
+                        restart = (response == "y") ? true : false;
+                    }
                 }
                 else{
                     foundItem->print();
