@@ -1,31 +1,27 @@
-#ifndef ITEM_H
-#define ITEM_H
-
+#pragma once
 #include <iostream>
-using namespace std;
 
 class Item {
 private:
-    string itemName;
-    string itemDescription;
-    string itemSeller;
+    std::string itemName;
+    std::string itemDescription;
+    std::string itemSeller;
     double itemPrice;
     int itemQuantity;
 public:
 
-    Item(string itemName, string itemDescription, double itemPrice, int itemQuantity);
+    Item(std::string itemName, std::string itemDescription, double itemPrice, int itemQuantity);
 
-    string getItemName() const;
-    string getItemDescription() const;
+    std::string getItemName() const;
+    std::string getItemDescription() const;
     double getItemPrice() const;
     int getItemQuantity() const;
 
-    void setItemName(string name);
-    void setItemDescription(string description);
+    void setItemName(std::string name);
+    void setItemDescription(std::string description);
     void setItemPrice(double price);
     void setItemQuantity(int quantity);
 
-    void print() const;
+    virtual void print() const;
 };
 
-#endif

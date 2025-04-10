@@ -22,7 +22,7 @@ int main(){
             User user1;
             user1.adminLogin(password);
 
-            bool addAnotherItem = true;
+            bool addAnotherItem = true; 
 
             while (user1.isAdmin() && addAnotherItem){
                 cout << "What item would you like to add to the inventory?" << endl;

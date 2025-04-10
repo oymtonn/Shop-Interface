@@ -1,4 +1,5 @@
 #include "ShopInventory.h"
+using namespace std;
 
 void ShopInventory::addItem(string itemName, string itemDescription, double itemPrice, int itemQuantity, User& user){
     if (user.isAdmin()){
@@ -30,7 +31,7 @@ void ShopInventory::purchaseItem(string itemName, User& user){
             Item& purchasingItem = temp->second;
 
             if (purchasingItem.getItemQuantity() > 1){
-                cout << "Thank you for your purchase!" << endl;
+                cout << "Thank you for your purchase! " << endl;
                 purchasingItem.setItemQuantity(purchasingItem.getItemQuantity() - 1);
             }
             else{

@@ -1,19 +1,13 @@
-#ifndef USER_H
-#define USER_H
-
+#pragma once
 #include <iostream>
-
-using namespace std;
 
 class User{
 private:
     bool admin;
-    string password;
+    std::string password;
 public:
     User();
 
     bool isAdmin();
-    void adminLogin(string);
+    void adminLogin(std::string);
 };
-
-#endif
