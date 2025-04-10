@@ -1,7 +1,6 @@
 #include "Item.h"
 #include "User.h"
 #include "ShopInventory.h"
-#include <iostream>
 
 using namespace std;
 
@@ -25,22 +24,26 @@ int main(){
             bool addAnotherItem = true; 
 
             while (user1.isAdmin() && addAnotherItem){
-                cout << "What item would you like to add to the inventory?" << endl;
-                string itemName;
-                cin >> itemName;
-                cout << "What is the description of the item?" << endl;
-                string itemDescription;
-                cin >> itemDescription;
-                cout << "What is the price of the item?" << endl;
-                double itemPrice;
-                cin >> itemPrice;
-                cout << "What is the quantity of the item?" << endl;
-                int itemQuantity;
-                cin >> itemQuantity;
+                cout << "What item would you like to add to the inventory? A drink or regular Item? (drink/item) "<< endl;
+                string itemChoice;
+                cin >> itemChoice;
+                if (itemChoice == "item"){
+                    string itemName;
+                    cin >> itemName;
+                    cout << "What is the description of the item?" << endl;
+                    string itemDescription;
+                    cin >> itemDescription;
+                    cout << "What is the price of the item?" << endl;
+                    double itemPrice;
+                    cin >> itemPrice;
+                    cout << "What is the quantity of the item?" << endl;
+                    int itemQuantity;
+                    cin >> itemQuantity;
 
-                inventory.addItem(itemName, itemDescription, itemPrice, itemQuantity, user1);
-                cout << "Item added to inventory. Here is the current inventory: " << endl;
-                inventory.printInventory();
+                    inventory.addItem(itemName, itemDescription, itemPrice, itemQuantity, user1);
+                    cout << "Item added to inventory. Here is the current inventory: " << endl;
+                    inventory.printInventory();
+                }
 
                 cout << "Would you like to add another item? (y/n)" << endl;
                 string response;

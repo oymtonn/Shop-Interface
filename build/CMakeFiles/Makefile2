@@ -85,12 +85,12 @@ clean: CMakeFiles/shop_interface.dir/clean
 CMakeFiles/shop_interface.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/myo/Desktop/Honors-Project-Shop-Interface/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target shop_interface"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/myo/Desktop/Honors-Project-Shop-Interface/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target shop_interface"
 .PHONY : CMakeFiles/shop_interface.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/shop_interface.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/myo/Desktop/Honors-Project-Shop-Interface/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/myo/Desktop/Honors-Project-Shop-Interface/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/shop_interface.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/myo/Desktop/Honors-Project-Shop-Interface/build/CMakeFiles 0
 .PHONY : CMakeFiles/shop_interface.dir/rule
@@ -102,7 +102,7 @@ shop_interface: CMakeFiles/shop_interface.dir/rule
 # codegen rule for target.
 CMakeFiles/shop_interface.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/myo/Desktop/Honors-Project-Shop-Interface/build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target shop_interface"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/myo/Desktop/Honors-Project-Shop-Interface/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target shop_interface"
 .PHONY : CMakeFiles/shop_interface.dir/codegen
 
 # clean rule for target.

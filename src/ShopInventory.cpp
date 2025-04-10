@@ -1,10 +1,17 @@
 #include "ShopInventory.h"
+
 using namespace std;
 
-void ShopInventory::addItem(string itemName, string itemDescription, double itemPrice, int itemQuantity, User& user){
+void ShopInventory::addItem(string itemName, string itemDescription, double itemPrice, int itemQuantity, int mL, User& user, string itemChoice){
     if (user.isAdmin()){
-        Item addingItem(itemName, itemDescription, itemPrice, itemQuantity);
-        inventory.insert({itemName, addingItem});
+        if (itemChoice == "item"){
+            Item addingItem(itemName, itemDescription, itemPrice, itemQuantity);
+            inventory.insert({itemName, addingItem});
+        }
+        else if (itemChoice == "drink"){
+            Item addingItem(itemName, itemDescription, itemPrice, itemQuantity, mL);
+            inventory.insert({itemName, addingItem});
+        }
     }
     else{
         cout << "You are not authorized to add items to the inventory." << endl;

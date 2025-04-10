@@ -1,24 +1,20 @@
-#ifndef INVENTORY_H
-#define INVENTORY_H
+#pragma once;
 
 #include "Item.h"
+#include "DrinkItem.h"
 #include "User.h"
-
 #include <unordered_map>
 #include <iostream>
-using namespace std;
 
 class ShopInventory{
 private:
-    unordered_map<string, Item> inventory;
+    std::unordered_map<std::string, Item> inventory;
 public:
-    void addItem(string itemName, string itemDescription, double itemPrice, int itemQuantity, User& user);
-    Item* searchItem(string itemName);
-    void purchaseItem(string itemName, User& user);
+    void addItem(std::string itemName, std::string itemDescription, double itemPrice, int itemQuantity, User& user, std::string itemChoice);
+    Item* searchItem(std::string itemName);
+    void purchaseItem(std::string itemName, User& user);
 
     void printInventory();
 
 };
 
-
-#endif

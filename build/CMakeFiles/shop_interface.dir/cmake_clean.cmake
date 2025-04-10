@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/shop_interface.dir/src/DrinkItem.cpp.o"
+  "CMakeFiles/shop_interface.dir/src/DrinkItem.cpp.o.d"
   "CMakeFiles/shop_interface.dir/src/Item.cpp.o"
   "CMakeFiles/shop_interface.dir/src/Item.cpp.o.d"
   "CMakeFiles/shop_interface.dir/src/ShopInventory.cpp.o"

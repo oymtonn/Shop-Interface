@@ -129,6 +129,30 @@ shop_interface/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/build
 .PHONY : shop_interface/fast
 
+src/DrinkItem.o: src/DrinkItem.cpp.o
+.PHONY : src/DrinkItem.o
+
+# target to build an object file
+src/DrinkItem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/DrinkItem.cpp.o
+.PHONY : src/DrinkItem.cpp.o
+
+src/DrinkItem.i: src/DrinkItem.cpp.i
+.PHONY : src/DrinkItem.i
+
+# target to preprocess a source file
+src/DrinkItem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/DrinkItem.cpp.i
+.PHONY : src/DrinkItem.cpp.i
+
+src/DrinkItem.s: src/DrinkItem.cpp.s
+.PHONY : src/DrinkItem.s
+
+# target to generate assembly for a file
+src/DrinkItem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shop_interface.dir/build.make CMakeFiles/shop_interface.dir/src/DrinkItem.cpp.s
+.PHONY : src/DrinkItem.cpp.s
+
 src/Item.o: src/Item.cpp.o
 .PHONY : src/Item.o
 
@@ -234,6 +258,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... shop_interface"
+	@echo "... src/DrinkItem.o"
+	@echo "... src/DrinkItem.i"
+	@echo "... src/DrinkItem.s"
 	@echo "... src/Item.o"
 	@echo "... src/Item.i"
 	@echo "... src/Item.s"
