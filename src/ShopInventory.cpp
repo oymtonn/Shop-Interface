@@ -5,12 +5,12 @@ using namespace std;
 void ShopInventory::addItem(string itemName, string itemDescription, double itemPrice, int itemQuantity, int mL, User& user, string itemChoice){
     if (user.isAdmin()){
         if (itemChoice == "item"){
-            Item addingItem(itemName, itemDescription, itemPrice, itemQuantity);
-            inventory.insert({itemName, addingItem});
+            shared_ptr<Item> addingItem = make_shared<Item>(itemName, itemDescription, itemPrice, itemQuantity);
+            inventory[itemName] = addingItem;
         }
         else if (itemChoice == "drink"){
-            Item addingItem(itemName, itemDescription, itemPrice, itemQuantity, mL);
-            inventory.insert({itemName, addingItem});
+            shared_ptr<DrinkItem> drinkItem = make_shared<DrinkItem>(itemName, itemDescription, itemPrice, itemQuantity, mL);
+            inventory[itemName] = static_pointer_cast<Item>(drinkItem);
         }
     }
     else{
@@ -22,8 +22,8 @@ Item* ShopInventory::searchItem(string itemName){
     auto it = inventory.find(itemName);
     if (it != inventory.end()){
         cout << "Item found:" << endl;
-        it->second.print();
-        return &(it->second);
+        it->second->print();
+        return it->second.get();
     }
     else{
         return nullptr;
@@ -35,14 +35,14 @@ void ShopInventory::purchaseItem(string itemName, User& user){
         auto temp = inventory.find(itemName);  
 
         if (temp != inventory.end()){
-            Item& purchasingItem = temp->second;
+            shared_ptr<Item>& purchasingItem = temp->second;
 
-            if (purchasingItem.getItemQuantity() > 1){
+            if (purchasingItem->getItemQuantity() > 1){
                 cout << "Thank you for your purchase! " << endl;
-                purchasingItem.setItemQuantity(purchasingItem.getItemQuantity() - 1);
+                purchasingItem->setItemQuantity(purchasingItem->getItemQuantity() - 1);
             }
             else{
-                cout << "Thank you for your purchase!";
+                cout << "Thank you for your purchase!" << endl;
                 inventory.erase(itemName);
             }
         }
@@ -55,7 +55,6 @@ void ShopInventory::purchaseItem(string itemName, User& user){
 void ShopInventory::printInventory(){
     for (auto const& pair : inventory){
         cout << pair.first << endl;
-        pair.second.print();
+        pair.second->print();
     }
 }
-

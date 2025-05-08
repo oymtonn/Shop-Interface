@@ -17,6 +17,6 @@ void DrinkItem::setML(int mL){
 
 void DrinkItem::print() const{
     cout << "   " << getItemName() << "\n" << "   Description: " << getItemDescription() << "\n"
-        << "   Price: " << getItemPrice() << "\n" << "   Quantity: " << getItemQuantity() << "\n";
+        << "   Price: " << getItemPrice() << "\n" << "   mL: " << getML() << "\n" <<"   Quantity: " << getItemQuantity() << "\n";
 }
 

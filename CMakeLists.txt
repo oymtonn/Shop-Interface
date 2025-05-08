@@ -1,4 +1,8 @@
-cmake_minimum_required(VERSION 3.30)
+cmake_minimum_required(VERSION 3.10)
+
+# Explicitly set the OSX SDK path to one that exists on your system
+set(CMAKE_OSX_SYSROOT "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk")
+
 project(ShopInterface)
 
 set(CMAKE_CXX_STANDARD 17)

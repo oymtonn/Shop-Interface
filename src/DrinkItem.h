@@ -3,7 +3,7 @@
 #include "Item.h"
 #include <iostream>
 
-class DrinkItem : Item{
+class DrinkItem : public Item{
 private:
     int mL;
 public:
